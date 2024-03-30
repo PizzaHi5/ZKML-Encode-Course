@@ -1,0 +1,25 @@
+Multiplicative inverses
+For the set S = {0,1,2,3,4,5,6}
+What is
+a) 3 x 5
+    p = 7;
+    3 x 5 = 15mod7 = 1
+
+b) The multiplicative inverse of 3 ?
+    Applying fermats little theoreum,
+    a = 3;
+    p = 7;
+    3^5 = 243mod7 = 5
+
+
+Polynomials
+For the polynomial x^3 − 2x^2 − 2x − 3
+Find a positive root
+    r = 3
+
+What is the degree of this polynomial ?
+    Degree = 3
+
+Rewrite this in the form
+(x − a).Q(x)
+    (x - 3) * (x^2 + x + 1)

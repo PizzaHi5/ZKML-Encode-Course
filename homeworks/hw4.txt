@@ -1,0 +1,15 @@
+Podcast
+Listen to these Zero Knowledge Podcasts about
+zkML
+On chain AI
+
+EZKL
+Try another example from the EZKL repo using
+Google Colab.
+
+ML Resources
+If you are new to machine learning, this guide will
+be helpful.
+This article gives an introduction to Large Language Models
+(Optional)
+Here is a more in depth article about ML

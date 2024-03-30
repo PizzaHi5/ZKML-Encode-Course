@@ -1,0 +1,97 @@
+EZKL
+To get a taste of EZKL, try running the example
+notebook from the EZKL repo
+The notebook runs in Google Collab.
+
+Use the simple_demo_public_network_output
+notebook
+
+At this stage just get a general idea of the steps it
+is going through.
+
+Notebook:
+https://colab.research.google.com/github/zkonduit/ezkl/blob/main/examples/notebooks/simple_demo_public_network_output.ipynb
+
+CODE
+Script 1:
+try:
+    # install ezkl
+    import google.colab
+    import subprocess
+    import sys
+    subprocess.check_call([sys.executable, "-m", "pip", "install", "ezkl"])
+    subprocess.check_call([sys.executable, "-m", "pip", "install", "onnx"])
+
+# rely on local installation of ezkl if the notebook is not in colab
+except:
+    pass
+
+    This chunk downloads/installs libraries required to get the model and ezkl setup. 
+
+
+Chunk 2: Imports
+# here we create and (potentially train a model)
+
+# make sure you have the dependencies required here already installed
+from torch import nn
+import ezkl
+import os
+import json
+import torch
+
+    This section prepares the script for what it will need to execute. Its using PyTorch, ezkl, json, and os. 
+
+The 3rd Chunk: Model
+class MyModel(nn.Module):
+    def __init__(self):
+        super(MyModel, self).__init__()
+
+        self.conv1 = nn.Conv2d(in_channels=1, out_channels=2, kernel_size=5, stride=2)
+        self.conv2 = nn.Conv2d(in_channels=2, out_channels=3, kernel_size=5, stride=2)
+
+        self.relu = nn.ReLU()
+
+        self.d1 = nn.Linear(48, 48)
+        self.d2 = nn.Linear(48, 10)
+
+    This section sets up 2 convolutional layers, a ReLU, and 2 linear layers. 
+
+Final Chunk: Model
+def forward(self, x):
+        # 32x1x28x28 => 32x32x26x26
+        x = self.conv1(x)
+        x = self.relu(x)
+        x = self.conv2(x)
+        x = self.relu(x)
+
+        # flatten => 32 x (32*26*26)
+        x = x.flatten(start_dim = 1)
+
+        # 32 x (32*26*26) => 32x128
+        x = self.d1(x)
+        x = self.relu(x)
+
+        # logits => 32x10
+        logits = self.d2(x)
+
+        return logits
+    This script is setting up a simple prediction model ai processing thru 2 convolutional layers and non-linearization between convolutions. The final
+    output is flattened into a 1-dimensional tensor. This flattened output is fed into the linear layer d1, then ReLU'd like before, then linear layer
+    d2. Finally, the output is returned. 
+
+circuit = MyModel()
+
+Script 2: The next script sets up pathing for outputs. 
+
+Script 3: The training is exported to an ONNX file. It creates an input.json as well. A 3rd-dimensional tensor is used in 
+generating the ONXX, which is common for grayscale imaging. The code here exports the AI model. 
+
+Script 4: This sets some ezkl variables based on the model input and user input. 
+
+Script 5: Generates random tensor data of specified size as calibration data for ezkl_calibration settings 
+
+Script 6+: These scripts do what happens in circom for snarks. We take the model and calibration settings to compile the ZK circuit.
+With the compiled circuit, the witness is generated next. The circuit params are made next. Combining the compiled model, witness, pk, and a return path
+for the proof, a proof is generated. This can be verified later with ezkl.verify(params)! 
+
+Its good to know that this zk setup is only useful for small CNNs (<18M) since the computation time explodes for larger parameter models.

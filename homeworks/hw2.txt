@@ -1,0 +1,10 @@
+1. Listen to the Zero Knowledge Podcast
+episode about Attested Audio
+    This was a very cool project. An attested microphone is a great concept going forward for verifying audio integrity. Its not currently in a useable state
+    but I believe that will change as computation gets cheaper and more security layers are added to the proof. They talked about including video lip movement
+    with the audio clip to verify. I am following zk podcast. 
+
+2. Read the report from Modulus Labs
+https://medium.com/@ModulusLabs/chapter-5-the-cost-of-intelligence-da26dbf93307
+    I saved the white pages this article references in the ```docs/whitepages/ModulusLabs``` file. The charts were in the notes as well. Since Jan 2023, I heard
+    PLONKY3 is out so I am curious how that compares to zkCNN and others. This is an amazing start to benchmarking zk systems!
