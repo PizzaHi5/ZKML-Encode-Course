@@ -1,15 +1,38 @@
 Podcast
 Listen to these Zero Knowledge Podcasts about
 zkML
+    Listened! Some of the best applications of ZK can be anti-catphising, dating applications, attested sensors, privacy 
+    on the company and consumer level, . Use ZKP to compress computation, split computation into separate proofs (ZK and ML).
+    Computation is a the biggest hurdle. Isolate private computation into user device and push public computation onto server.
+    Commit to hidden info, then must de-commit info. Hashing has major performance hit in ZK. 175billion weights in GPT3.
+    Linear Algebra and linearity computation in ML, ZK algos have trouble doing both well. Usually can only do 1 well at a time.
+
+
 On chain AI
+    Listened! This are very informative :D. Ritual: AI coprocessor, wooooooow! Rituals approach to build many different classes of
+    nodes for executing different applications on the network is interesting! Pricing is a huge challenge for them. Ritual offers
+    many types of proof options (ZKPs, OPs[optimistic proof], post to Ethereum) for onchain integrity (Proof Marketplace). They want
+    ppL to use their infra to build proofs on/offchain. Trust assumptions matter in terms of maximum sized AI parameters available. 
+    They made 100-200k params for ZKP and much larger for OP. Can run any AI model on Ritual. 2 core production atm: Infranet 
+    (oracle for proofs can be deployed to any EVM compatible chain) and Ritual blockchain (WIP). 
+
+    Few options currently in Infranet: Halo2, EZKL, OP, and no proof. 
+
+    Quote: "Crypto is focused on worst case scenario and AI is focused on average scenario"
+    Quote: "Only pay for how much security you need"
 
 EZKL
 Try another example from the EZKL repo using
 Google Colab.
+https://colab.research.google.com/github/zkonduit/ezkl/blob/main/examples/notebooks/mnist_classifier.ipynb#scrollTo=Fm2DMmXW0rZ0
+This is a great example applications for ZK. 
 
 ML Resources
 If you are new to machine learning, this guide will
 be helpful.
+    I read the guide. This is a good refresher and I learned some new details. 
 This article gives an introduction to Large Language Models
+    I took a course previously on LLMs but I still appreciate relearning. Went thru this. 
 (Optional)
 Here is a more in depth article about ML
+    Check the homework file for the link. Very good read!

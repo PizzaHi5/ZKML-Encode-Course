@@ -1,4 +1,7 @@
+Resources
 https://zkpod.ai/
+https://github.com/zkml-community/awesome-zkml
+https://future-seaplane-bec.notion.site/MEAP-1-One-Pager-Public-8b1440517916431e903db04098d5ee2c
 
 ZKML Use-Cases
 https://www.youtube.com/watch?v=f4X841gDnwY
@@ -6,3 +9,10 @@ https://www.youtube.com/watch?v=f4X841gDnwY
 WorldCoin Technical Spec
 https://whitepaper.worldcoin.org/technical-implementation#the-orb
 
+Giza - Token Trend ML
+https://actions.gizatech.xyz/tutorials/token-trend-forecasting
+Tutorial for linear-regression
+https://actions.gizatech.xyz/tutorials/traditional-ml-models-for-zkml/linear-regression
+https://github.com/lambdaclass/lambdaworks/blob/main/docs/src/starks/protocol.md
+Datasets available
+https://datasets.gizatech.xyz/
