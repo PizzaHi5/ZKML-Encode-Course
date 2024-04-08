@@ -1,0 +1,21 @@
+Model name is: linear_regression
+[giza][2024-04-08 10:41:27.073] Model Created with id -> 489! ✅
+[giza][2024-04-08 10:41:27.856] Version Created with id -> 1! ✅
+[giza][2024-04-08 10:41:27.856] Sending model for transpilation ✅
+Endpoint is successful ✅
+[giza][2024-04-08 10:44:22.997] Endpoint created with id -> 130 ✅
+
+'gize workspaces get' returned an error. Workspace not found
+Perform inferences @:
+https://endpoint-pizzahi5-489-1-74c88db6-7i3yxzspbq-ew.a.run.app
+I reran the commands and got it working however I did not get an output proof-id
+
+I needed to add a print line to get the Proof_id since it was not printing that output
+for me to reference in the next steps.
+My proof_id is: ed089efea4fc415f8b7c94f8f966a1ec
+Task Completed here: https://actions-server-pizzahi5-dblzzhtf5q-ew.a.run.app/flow-runs/flow-run/d463db40-406c-4d9b-9f60-7d59afd061af
+
+Got the proof downloaded using the command below:
+giza endpoints download-proof --endpoint-id 130 --proof-id ed089efea4fc415f8b7c94f8f966a1ec --output-path zklr.proof
+
+Proof of Inference Complete! WOOT WOOT!

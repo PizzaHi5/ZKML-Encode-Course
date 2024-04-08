@@ -1,0 +1,5 @@
+Followed the guide in the hw5 docs. 
+
+The giza-cli is installed on my computer now
+
+This is continued in hw7

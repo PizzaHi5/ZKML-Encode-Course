@@ -25,7 +25,9 @@ EZKL
 Try another example from the EZKL repo using
 Google Colab.
 https://colab.research.google.com/github/zkonduit/ezkl/blob/main/examples/notebooks/mnist_classifier.ipynb#scrollTo=Fm2DMmXW0rZ0
-This is a great example applications for ZK. 
+    This is a great example applications for ZK. 
+    This setup is similar to the last ezkl example with a more complicated model. Running some of the functions took over 7mins. 
+    I oddly ran into an error midway thru. Looks like the .sol file was never generated from the proof. 
 
 ML Resources
 If you are new to machine learning, this guide will
