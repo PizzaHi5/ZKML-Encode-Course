@@ -1,6 +1,6 @@
 I watched and listened to both youtube videos. 
 
 Overview 1: ZKML Intro
-
+Daniel went into detail into various areas including, ZKML applications, ZK algos, proving systems, prompt engineering, ML challenges (float vs integer), and more
 
 Overview 2: Cost of Intelligence, Modulus Labs (Scroll)
